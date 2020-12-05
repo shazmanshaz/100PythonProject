@@ -15,5 +15,6 @@ bill_tip = float_bill * ((100+int_tip)/100) # calculates the total amount of bil
 pay = bill_tip / int_split # calculates the how much  the total bill plus the tip to be split
 
 pay_round = round(pay,2) # round the amount to two decimals
+pay_round = "{:.2f}".format(pay)
 
 print(f"Each person should pay: ${pay_round}
